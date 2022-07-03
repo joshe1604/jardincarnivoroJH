@@ -8,6 +8,7 @@ package jardin.carnivoro.proyecto.model;
  *
  * @author Joshe
  */
+//holiiii
 public class Tasistencia {
     
 }
