@@ -11,9 +11,8 @@ import javax.persistence.Column;
  *
  * @author Joshe
  */
-//holiiii
-public class Tasistencia {
-    
+public class Tmenu {
+ 
     
     
     

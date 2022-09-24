@@ -6,16 +6,23 @@ package jardin.carnivoro.proyecto.model;
 
 import java.util.Date;
 import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 /**
  *
  * @author Joshe
  */
-//holiiii
-public class Tasistencia {
+public class Tipousuario {
+
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @Column(name = "ctipousuario", nullable = false)
+    private Long ctipousuario;
     
-    
-    
+    @Column(name = "descripcion")
+    private String descripcion;
     
     @Column(name = "activo")
     private String activo;
@@ -31,6 +38,37 @@ public class Tasistencia {
     
     @Column(name = "fmodificacion")
     private Date fmodificacion;
+
+    
+    
+    
+    /**
+     * @return the ctipousuario
+     */
+    public Long getCtipousuario() {
+        return ctipousuario;
+    }
+
+    /**
+     * @param ctipousuario the ctipousuario to set
+     */
+    public void setCtipousuario(Long ctipousuario) {
+        this.ctipousuario = ctipousuario;
+    }
+
+    /**
+     * @return the descripcion
+     */
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    /**
+     * @param descripcion the descripcion to set
+     */
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
     
     /**
      * @return the activo

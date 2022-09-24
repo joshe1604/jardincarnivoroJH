@@ -6,15 +6,24 @@ package jardin.carnivoro.proyecto.model;
 
 import java.util.Date;
 import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 /**
  *
  * @author Joshe
  */
-//holiiii
-public class Tasistencia {
+public class Ttipodireccion {
     
     
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @Column(name = "ctipodireccion", nullable = false)
+    private String ctipodireccion;
+    
+    @Column(name = "descripcion")
+    private String descripcion;
     
     
     @Column(name = "activo")
